@@ -10854,4 +10854,9 @@ footer {
   margin: 10px;
 }
 
+.form-inline {
+  display: flex;
+  justify-content: end;
+}
+
 /*# sourceMappingURL=style.css.map */

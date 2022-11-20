@@ -1,0 +1,15 @@
+//Bootstrap variable overrides
+@import "variables";
+
+//Bootstrap Styles
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import "style.scss";
+
+.btn-custom {
+  @extend .btn-warning;
+  
+  &:hover {
+    @extend .btn-danger;
+  }
+}
