@@ -2860,7 +2860,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #8eecff;
 }
 
-.btn-warning, .btn-custom {
+.btn-warning {
   --bs-btn-color: #000000;
   --bs-btn-bg: #ffdf7e;
   --bs-btn-border-color: #ffdf7e;
@@ -2877,7 +2877,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #ffdf7e;
 }
 
-.btn-danger, .btn-custom:hover {
+.btn-danger {
   --bs-btn-color: #fff;
   --bs-btn-bg: #d8363a;
   --bs-btn-border-color: #d8363a;

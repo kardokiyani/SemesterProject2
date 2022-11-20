@@ -2860,7 +2860,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #8eecff;
 }
 
-.btn-warning, .btn-custom {
+.btn-warning {
   --bs-btn-color: #000000;
   --bs-btn-bg: #ffdf7e;
   --bs-btn-border-color: #ffdf7e;
@@ -2877,7 +2877,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #ffdf7e;
 }
 
-.btn-danger, .btn-custom:hover {
+.btn-danger {
   --bs-btn-color: #fff;
   --bs-btn-bg: #d8363a;
   --bs-btn-border-color: #d8363a;
@@ -13619,7 +13619,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #8eecff;
 }
 
-.btn-warning, .btn-custom {
+.btn-warning {
   --bs-btn-color: #000000;
   --bs-btn-bg: #ffdf7e;
   --bs-btn-border-color: #ffdf7e;
@@ -13636,7 +13636,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #ffdf7e;
 }
 
-.btn-danger, .btn-custom:hover {
+.btn-danger {
   --bs-btn-color: #fff;
   --bs-btn-bg: #d8363a;
   --bs-btn-border-color: #d8363a;
@@ -21616,29 +21616,6 @@ footer {
 .form-inline {
   display: flex;
   justify-content: end;
-}
-
-.imgStyle {
-  display: flex;
-  justify-content: center;
-}
-
-.gradient-custom-3 {
-  /* fallback for old browsers */
-  background: #84fab0;
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
-}
-
-.gradient-custom-4 {
-  /* fallback for old browsers */
-  background: #84fab0;
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(to right, rgb(132, 250, 176), rgb(143, 211, 244));
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to right, rgb(132, 250, 176), rgb(143, 211, 244));
 }
 
 /*# sourceMappingURL=register.css.map */
