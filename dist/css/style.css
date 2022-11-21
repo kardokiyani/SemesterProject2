@@ -10821,11 +10821,6 @@ nav ul {
   justify-content: end;
 }
 
-.searchContainer {
-  display: flex;
-  justify-content: center;
-}
-
 .imageContainer {
   display: flex;
   justify-content: center;
