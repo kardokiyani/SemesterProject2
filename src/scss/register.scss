@@ -8,3 +8,7 @@
 
 @import "style.scss";
 
+.form-error {
+  display: none;
+  color: $red;
+}

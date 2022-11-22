@@ -100,23 +100,42 @@
                       <h4 class="mt-1 mb-5 pb-1">We are the future of Auction!</h4>
                     </div>
     
-                    <form>
+                    <form id="formLogin" action="/profile.html">
                       <p>Please login to your account</p>
     
                       <div class="form-outline mb-4">
-                        <input type="email" id="form2Example11" class="form-control"
-                          placeholder="Phone number or email address" />
+                        <input 
+                        name="email" 
+                        type="email" 
+                        autocomplete="off" 
+                        class="form-control"
+                        id="email" 
+                        placeholder="Phone number or email address" />
                         <label class="form-label" for="form2Example11">Email</label>
+                      </div>
+
+                      <div class="formInputError" id="emailError">
+                        Please enter a valid email address
                       </div>
     
                       <div class="form-outline mb-4">
-                        <input type="password" id="form2Example22" class="form-control" 
+                        <input 
+                        password="password" 
+                        type="password"
+                        autocomplete="off"
+                        class="form-control"
+                        id="password"
+                        minlength="7"
                         placeholder="Password" />
                         <label class="form-label" for="form2Example22">Password</label>
                       </div>
+
+                      <div class="formInputError" id="passwordError">
+                        Your password should obtain minimum 10 letters or numbers
+                      </div>
     
                       <div class="text-center pt-1 mb-5 pb-1">
-                        <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Log
+                        <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit">Log
                           in</button>
                         <a class="text-muted" href="#!">Forgot password?</a>
                       </div>
