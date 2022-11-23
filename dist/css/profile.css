@@ -21639,6 +21639,10 @@ footer {
   justify-content: end;
 }
 
+.searchButton {
+  margin: 5px;
+}
+
 .mb-1 {
   font-size: 13.5px;
 }

@@ -21639,6 +21639,10 @@ footer {
   justify-content: end;
 }
 
+.searchButton {
+  margin: 5px;
+}
+
 .h3Style {
   display: flex;
   justify-content: center;

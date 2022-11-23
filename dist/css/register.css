@@ -21639,4 +21639,13 @@ footer {
   justify-content: end;
 }
 
+.searchButton {
+  margin: 5px;
+}
+
+.form-error {
+  display: none;
+  color: #d8363a;
+}
+
 /*# sourceMappingURL=register.css.map */
