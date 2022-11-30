@@ -21643,8 +21643,23 @@ footer {
   margin: 5px;
 }
 
+.contentStyle {
+  display: flex;
+  justify-content: center;
+}
+
+.postsStyle {
+  display: flex;
+  justify-content: center;
+}
+
 .mb-1 {
   font-size: 13.5px;
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=profile.css.map */

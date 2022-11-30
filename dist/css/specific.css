@@ -21643,4 +21643,19 @@ footer {
   margin: 5px;
 }
 
+.contentStyle {
+  display: flex;
+  justify-content: center;
+}
+
+.postsStyle {
+  display: flex;
+  justify-content: center;
+}
+
+.postStyle {
+  display: flex;
+  justify-content: center;
+}
+
 /*# sourceMappingURL=specific.css.map */

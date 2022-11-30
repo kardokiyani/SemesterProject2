@@ -21643,6 +21643,16 @@ footer {
   margin: 5px;
 }
 
+.contentStyle {
+  display: flex;
+  justify-content: center;
+}
+
+.postsStyle {
+  display: flex;
+  justify-content: center;
+}
+
 .formInputError {
   display: none;
   color: #d8363a;
