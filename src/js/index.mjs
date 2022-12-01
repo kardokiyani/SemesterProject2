@@ -43,3 +43,9 @@ async function getListListings(url) {
   }
 }
 getListListings(API_BASE_URL_LIST + API_GET_LISTINGS);
+
+// TO THE LOGOUT
+
+import {logOutSite} from "./logout.mjs";
+
+logOutSite();

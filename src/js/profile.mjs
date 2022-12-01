@@ -2,7 +2,7 @@
 
 const API_BASE_URL = "https://nf-api.onrender.com";
 
-const API_AUCTION_PROFILES = "/api/v1/auction/profiles";
+const API_AUCTION_PROFILE = "/api/v1/auction/profiles";
 
 const content = document.querySelector(".apiProfile");
 
@@ -35,4 +35,10 @@ async function fetchToken(url) {
   }
 }
 
-fetchToken(API_BASE_URL + API_AUCTION_PROFILES);
+fetchToken(API_BASE_URL + API_AUCTION_PROFILE);
+
+// TO THE LOGOUT 
+
+import {logOutSite} from "./logout.mjs";
+
+logOutSite();

@@ -30,7 +30,7 @@ async function loginUser() {
     console.log(json);
     const accessToken = json.accessToken;
     localStorage.setItem("accessToken", accessToken);
-    if (response.status === 200) location.href = "profile.html";
+    if (response.status === 200) location.replace('profile.html');
     if (json.error) {
       validateForm();
     }
@@ -58,3 +58,9 @@ function validateLogin(submission) {
 }
 
 formLogin.addEventListener("submit", validateLogin);
+
+// TO THE LOGOUT 
+
+import {logOutSite} from "./logout.mjs";
+
+logOutSite();

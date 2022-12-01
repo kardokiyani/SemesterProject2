@@ -57,3 +57,9 @@ async function specificPostWithId(API_ALL_LISTINGS) {
 }
 
 specificPostWithId(API_BASE_URL_SPECIFIC + API_GET_LISTINGS);
+
+// TO THE LOGOUT 
+
+import {logOutSite} from "./logout.mjs";
+
+logOutSite();
