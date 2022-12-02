@@ -21653,6 +21653,10 @@ footer {
   justify-content: center;
 }
 
+.formStyle {
+  padding: 20px;
+}
+
 .formInputError {
   display: none;
   color: #d8363a;

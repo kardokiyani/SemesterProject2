@@ -21653,6 +21653,10 @@ footer {
   justify-content: center;
 }
 
+.formStyle {
+  padding: 20px;
+}
+
 .h3Style {
   display: flex;
   justify-content: center;

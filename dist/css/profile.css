@@ -21653,11 +21653,15 @@ footer {
   justify-content: center;
 }
 
+.formStyle {
+  padding: 20px;
+}
+
 .mb-1 {
   font-size: 13.5px;
 }
 
-.imgContainer {
+.imageContainer {
   display: flex;
   justify-content: center;
 }
