@@ -6,22 +6,12 @@ const API_AUCTION_PROFILE = "/api/v1/auction/profiles/";
 
 const content = document.querySelector(".apiProfile");
 
-import {save, load, remove} from "./storage.mjs";
+import { load } from "./storage.mjs";
 
-async function fetchToken(name) {
+async function fetchToken(profileName) {
+  const profileURL = '/api/v1/auction/profiles/' + profileName;
   try {
-    const token = load('accessToken')
-    console.log(token);
-    const getAllData = {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${token}`,
-      },
-    };
-    const response = await fetch(
-      API_BASE_URL + API_AUCTION_PROFILE)
-      getAllData
+    const response = await authFetch(API_BASE_URL + profileURL);
     console.log(response);
     const json = await response.json();
     content.innerHTML += fetchToken(json);
@@ -33,7 +23,10 @@ async function fetchToken(name) {
         <div class="col-lg-4">
           <div class=" mb-4">
             <div class="card-body text-center">
-            <h2></h2>
+            <h2>${json.name}</h2>
+            <h3>${json.email}<h3>
+            <h3>${json.credits}</h3>
+            <h3>${json.avatar}</h3>
               </div>`;
     }
   } catch (error) {
@@ -41,10 +34,12 @@ async function fetchToken(name) {
   }
 }
 
-fetchToken(API_BASE_URL + API_AUCTION_PROFILE);
+const { name } = load('profile');
+fetchToken(name);
 
-// TO THE LOGOUT 
+// TO THE LOGOUT
 
-import {logOutSite} from "./logout.mjs";
+import { logOutSite } from "./logout.mjs";
+import { authFetch } from "./authFetch.mjs";
 
 logOutSite();

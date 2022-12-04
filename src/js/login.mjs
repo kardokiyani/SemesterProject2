@@ -2,6 +2,8 @@
 
 import { validateEmail, passwordValidation } from "./validation.mjs";
 
+import {save} from "./storage.mjs";
+
 const API_BASE_URL = "https://nf-api.onrender.com";
 
 const formLogin = document.querySelector("#formLogin");
@@ -26,10 +28,9 @@ async function loginUser() {
     };
     const response = await fetch(loginUrl, postData);
     console.log(response);
-    const json = await response.json();
-    console.log(json);
-    const accessToken = json.accessToken;
+    const { accessToken, ...profile } = await response.json()
     localStorage.setItem("accessToken", accessToken);
+    save('profile', profile)
     if (response.status === 200) location.replace('profile.html');
     if (json.error) {
       validateForm();
