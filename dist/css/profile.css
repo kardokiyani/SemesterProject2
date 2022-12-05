@@ -21657,6 +21657,12 @@ footer {
   padding: 20px;
 }
 
+.img-fluid {
+  width: 100%;
+  object-fit: cover;
+  max-height: 220px;
+}
+
 .mb-1 {
   font-size: 13.5px;
 }

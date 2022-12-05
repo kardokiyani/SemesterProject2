@@ -21657,6 +21657,12 @@ footer {
   padding: 20px;
 }
 
+.img-fluid {
+  width: 100%;
+  object-fit: cover;
+  max-height: 220px;
+}
+
 .postStyle {
   display: flex;
   justify-content: center;

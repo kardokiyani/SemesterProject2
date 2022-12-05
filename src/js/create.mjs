@@ -1,10 +1,12 @@
 // CREATE MJS
 
+import { API_BASE_URL_LIST } from "./stored/constants.mjs";
+
+import { updateUrl } from "./stored/constants.mjs";
+
 import { validateTitle, validateDeadlineDate, validateMedia, validateDescription } from "./validation.mjs";
 
 import { authFetch } from "./authFetch.mjs";
-
-const API_BASE_URL_LIST = "https://nf-api.onrender.com";
 
 const API_GET_LISTINGS = "/api/v1/auction/listings";
 
@@ -30,11 +32,11 @@ const action = "/posts";
 const method = "post";
 
 export async function createPost(title, deadlineDate, media, description) {
-  const createPostsUrl = API_GET_LISTINGS + "/auction/listings";
+  const updateUrl = API_BASE_URL_LIST + "auction/listings";
   const accessToken = localStorage.getItem("accessToken");
 
   try {
-    const response = await authFetch(createPostsUrl, {
+    const response = await authFetch(updateUrl, {
       method: method,
       headers: {
         "Content-Type": "application/json",
@@ -47,13 +49,14 @@ export async function createPost(title, deadlineDate, media, description) {
         description: description,
       }),
     });
+    console.log(title);
     const data = await response.json();
   } catch (error) {
     console.error(error);
   }
 }
 
-createPost(API_BASE_URL_LIST + API_GET_LISTINGS);
+createPost();
 
 function validatePost(e) {
   e.preventDefault();

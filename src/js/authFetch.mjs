@@ -1,4 +1,4 @@
-// AUTH FETCH JS
+// AUTH FETCH MJS
 
 export function headers() {
   const token = localStorage.getItem("accessToken");
