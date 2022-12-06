@@ -2,7 +2,7 @@
 
 const API_BASE_URL_LIST = "https://nf-api.onrender.com";
 
-const API_GET_LISTINGS = "/api/v1/auction/listings";
+const API_GET_LISTINGS = "/api/v1/auction/listings/?sort=created&sortOrder=desc";
 
 const content = document.querySelector(".apiListings");
 

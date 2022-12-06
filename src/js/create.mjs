@@ -28,7 +28,6 @@ const mediaError = document.querySelector("#mediaError");
 
 const descriptionError = document.querySelector("#descriptionError");
 
-const action = "/posts";
 const method = "post";
 
 export async function createPost(title, deadlineDate, media, description) {
@@ -44,19 +43,16 @@ export async function createPost(title, deadlineDate, media, description) {
       },
       body: JSON.stringify({
         title: title,
-        deadlineDate: deadlineDate,
+        endsAt: deadlineDate,
         media: media,
         description: description,
       }),
     });
-    console.log(title);
     const data = await response.json();
   } catch (error) {
     console.error(error);
   }
 }
-
-createPost();
 
 function validatePost(e) {
   e.preventDefault();
