@@ -37,6 +37,53 @@ async function fetchToken(profileName) {
 const { name } = load('profile');
 fetchToken(name);
 
+// UPDATE AVATAR
+
+const form = document.querySelector("#form");
+const avatar = document.querySelector("#avatar");
+
+const url = API_BASE_URL + API_AUCTION_PROFILE + "kardo/media";
+
+(async function () {
+  const method = "PUT";
+  try {
+    const response = await authFetch(url, method);
+    const json = await response.json();
+
+    avatar.value = json.avatar;
+    
+  } catch (error) {
+    console.log(error);
+  }
+})();
+
+form.onsubmit = function (event) {
+  event.preventDefault();
+
+  const avatarValue = avatar.value;
+
+  updateAvatar(avatarValue);
+};
+
+async function updateAvatar(avatar) {
+  const method = "PUT";
+
+  const data = {
+    avatar: avatar,
+  };
+
+  try {
+    const response = await authFetch(url, {
+      method,
+      body: JSON.stringify(data),
+    });
+
+    const json = await response.json();
+  } catch (error) {
+    console.log(error);
+  }
+}
+
 // TO THE LOGOUT
 
 import { logOutSite } from "./logout.mjs";
