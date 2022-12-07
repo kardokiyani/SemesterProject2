@@ -21663,6 +21663,15 @@ footer {
   max-height: 220px;
 }
 
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-success {
+  font-size: 25px;
+}
+
 .h3Style {
   display: flex;
   justify-content: center;

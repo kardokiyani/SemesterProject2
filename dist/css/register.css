@@ -21663,6 +21663,15 @@ footer {
   max-height: 220px;
 }
 
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-success {
+  font-size: 25px;
+}
+
 .form-error {
   display: none;
   color: #d8363a;

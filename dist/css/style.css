@@ -10891,4 +10891,13 @@ footer {
   max-height: 220px;
 }
 
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-success {
+  font-size: 25px;
+}
+
 /*# sourceMappingURL=style.css.map */

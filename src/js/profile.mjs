@@ -39,41 +39,25 @@ fetchToken(name);
 
 // UPDATE AVATAR
 
-const form = document.querySelector("#form");
-const avatar = document.querySelector("#avatar");
+const form = document.querySelector("#avatarForm");
 
-const url = API_BASE_URL + API_AUCTION_PROFILE + "kardo/media";
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-(async function () {
+  updateAvatar(name);
+});
+
+async function updateAvatar(userName) {
   const method = "PUT";
-  try {
-    const response = await authFetch(url, method);
-    const json = await response.json();
-
-    avatar.value = json.avatar;
-    
-  } catch (error) {
-    console.log(error);
-  }
-})();
-
-form.onsubmit = function (event) {
-  event.preventDefault();
-
-  const avatarValue = avatar.value;
-
-  updateAvatar(avatarValue);
-};
-
-async function updateAvatar(avatar) {
-  const method = "PUT";
+  const avatar = document.querySelector("#avatarId");
+  const updateURL = API_BASE_URL + API_AUCTION_PROFILE + `${userName}/media`;
 
   const data = {
-    avatar: avatar,
+    avatar: avatar.value,
   };
 
   try {
-    const response = await authFetch(url, {
+    const response = await authFetch(updateURL, {
       method,
       body: JSON.stringify(data),
     });
