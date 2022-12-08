@@ -10900,4 +10900,9 @@ footer {
   font-size: 25px;
 }
 
+.form-error {
+  display: none;
+  color: #d8363a;
+}
+
 /*# sourceMappingURL=style.css.map */

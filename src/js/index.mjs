@@ -1,5 +1,13 @@
 // INDEX MJS
 
+import { searchLists } from "./search.mjs";
+
+import { filterLists } from "./search.mjs";
+
+import { renderLists } from "./render.mjs";
+
+import { authFetch } from "./authFetch.mjs";
+
 const API_BASE_URL_LIST = "https://nf-api.onrender.com";
 
 const API_GET_LISTINGS = "/api/v1/auction/listings/?sort=created&sortOrder=desc";
@@ -22,6 +30,7 @@ async function getListListings(url) {
     console.log(json);
     for (let i = 0; i < json.length; i++) {
       console.log(json[i]);
+      console.log(json[i].media);
       content.innerHTML += `<div class="postsStyle">
       <div class="col-xl-3 col-lg-4 col-md-6 mb-4 mt-5"><a href="specific.html?id=${json[i].id}" class="text-decoration-none">
         <div>

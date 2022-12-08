@@ -21672,6 +21672,11 @@ footer {
   font-size: 25px;
 }
 
+.form-error {
+  display: none;
+  color: #d8363a;
+}
+
 .mb-1 {
   font-size: 13.5px;
 }

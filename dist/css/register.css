@@ -21677,4 +21677,9 @@ footer {
   color: #d8363a;
 }
 
+.form-error {
+  display: none;
+  color: #d8363a;
+}
+
 /*# sourceMappingURL=register.css.map */

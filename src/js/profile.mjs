@@ -26,7 +26,7 @@ async function fetchToken(profileName) {
             <h2>${json.name}</h2>
             <h3>${json.email}<h3>
             <h3>${json.credits}</h3>
-            <h3>${json.avatar}</h3>
+            <img src=${json.avatar} alt="profile avatar" />
               </div>`;
     }
   } catch (error) {

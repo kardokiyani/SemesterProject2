@@ -21672,6 +21672,11 @@ footer {
   font-size: 25px;
 }
 
+.form-error {
+  display: none;
+  color: #d8363a;
+}
+
 .h3Style {
   display: flex;
   justify-content: center;
