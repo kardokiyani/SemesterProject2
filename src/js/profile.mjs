@@ -9,7 +9,7 @@ const content = document.querySelector(".apiProfile");
 import { load } from "./storage.mjs";
 
 async function fetchToken(profileName) {
-  const profileURL = '/api/v1/auction/profiles/' + profileName;
+  const profileURL = "/api/v1/auction/profiles/" + profileName;
   try {
     const response = await authFetch(API_BASE_URL + profileURL);
     console.log(response);
@@ -34,7 +34,7 @@ async function fetchToken(profileName) {
   }
 }
 
-const { name } = load('profile');
+const { name } = load("profile");
 fetchToken(name);
 
 // UPDATE AVATAR

@@ -2,7 +2,7 @@
 
 import { validateEmail, passwordValidation } from "./validation.mjs";
 
-import {save} from "./storage.mjs";
+import { save } from "./storage.mjs";
 
 const API_BASE_URL = "https://nf-api.onrender.com";
 
@@ -28,10 +28,10 @@ async function loginUser() {
     };
     const response = await fetch(loginUrl, postData);
     console.log(response);
-    const { accessToken, ...profile } = await response.json()
+    const { accessToken, ...profile } = await response.json();
     localStorage.setItem("accessToken", accessToken);
-    save('profile', profile)
-    if (response.status === 200) location.replace('profile.html');
+    save("profile", profile);
+    if (response.status === 200) location.replace("profile.html");
     if (json.error) {
       validateForm();
     }
@@ -60,8 +60,8 @@ function validateLogin(submission) {
 
 formLogin.addEventListener("submit", validateLogin);
 
-// TO THE LOGOUT 
+// TO THE LOGOUT
 
-import {logOutSite} from "./logout.mjs";
+import { logOutSite } from "./logout.mjs";
 
 logOutSite();

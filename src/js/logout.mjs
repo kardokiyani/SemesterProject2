@@ -6,7 +6,7 @@ export function logOutSite() {
   const logOut = document.querySelector("#logOut");
 
   logOut.addEventListener("click", () => {
-  remove("accessToken");
-  window.location.assign("index.html"); 
+    remove("accessToken");
+    window.location.assign("index.html");
   });
 }

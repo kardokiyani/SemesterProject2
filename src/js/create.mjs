@@ -4,7 +4,12 @@ import { API_BASE_URL_LIST } from "./stored/constants.mjs";
 
 import { updateUrl } from "./stored/constants.mjs";
 
-import { validateTitle, validateDeadlineDate, validateMedia, validateDescription } from "./validation.mjs";
+import {
+  validateTitle,
+  validateDeadlineDate,
+  validateMedia,
+  validateDescription,
+} from "./validation.mjs";
 
 import { authFetch } from "./authFetch.mjs";
 
@@ -76,7 +81,12 @@ function validatePost(e) {
   } else {
     descriptionError.style.display = "block";
   }
-  return createPost(title.value, deadlineDate.value, mediaError.value, description.value);
+  return createPost(
+    title.value,
+    deadlineDate.value,
+    mediaError.value,
+    description.value
+  );
 }
 
 form.addEventListener("submit", validatePost);

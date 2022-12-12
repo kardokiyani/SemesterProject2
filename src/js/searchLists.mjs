@@ -1,6 +1,6 @@
 // SEARCH LISTS
 
-import {API_BASE_URL_LIST} from "./stored/constants.mjs"
+import { API_BASE_URL_LIST } from "./stored/constants.mjs";
 
 form.addEventListener("submit", handleSearchListings);
 
