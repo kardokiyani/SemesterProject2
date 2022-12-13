@@ -21677,6 +21677,11 @@ footer {
   color: #d8363a;
 }
 
+.nav-item {
+  gap: 10px;
+  padding: 3px;
+}
+
 .h3Style {
   display: flex;
   justify-content: center;

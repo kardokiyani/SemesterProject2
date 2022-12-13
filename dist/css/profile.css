@@ -21677,6 +21677,11 @@ footer {
   color: #d8363a;
 }
 
+.nav-item {
+  gap: 10px;
+  padding: 3px;
+}
+
 .mb-1 {
   font-size: 13.5px;
 }

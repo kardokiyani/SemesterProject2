@@ -21677,9 +21677,18 @@ footer {
   color: #d8363a;
 }
 
+.nav-item {
+  gap: 10px;
+  padding: 3px;
+}
+
 .form-error {
   display: none;
   color: #d8363a;
+}
+
+.mb-4 {
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=register.css.map */
