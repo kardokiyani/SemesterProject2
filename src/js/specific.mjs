@@ -14,9 +14,7 @@ const API_BASE_URL_SPECIFIC = "https://nf-api.onrender.com/";
 
 const API_GET_LISTINGS = "api/v1/auction/listings/" + id;
 
-const bidInput = document.querySelector('#bidButton');
-
-console.log();
+specificPostWithId(API_BASE_URL_SPECIFIC + API_GET_LISTINGS);
 
 async function specificPostWithId(API_ALL_LISTINGS) {
   try {
@@ -48,47 +46,51 @@ async function specificPostWithId(API_ALL_LISTINGS) {
               </div>
             <div>
             <form id="formBid">
-            <input class="form-control" placeholder="Bid....." type="submit" name="inputName" id="BidButton required ">
-                <button type="button" class="btn btn-outline-success shadow-lg  border rounded text-dark mt-2">Place bid</button>
+            <input class="form-control" placeholder="Bid....." name="inputName" id="bidButton" required>
+                <button type="submit" class="btn btn-outline-success shadow-lg  border rounded text-dark mt-2">Place bid</button>
                 </form>
               </div>
               </div>
        </section>`;
+
+    const bidInput = document.querySelector("#bidButton");
+
+    async function bidToSpecificListing(listID) {
+      try {
+        const token = localStorage.getItem("accessToken");
+        const getSpecificData = {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+          body: JSON.stringify({
+            amount: Number(bidInput.value),
+          }),
+        };
+        const url = `api/v1/auction/listings/${listID}/bids`;
+        const response = await fetch(
+          API_BASE_URL_SPECIFIC + url,
+          getSpecificData
+        );
+        console.log(response);
+        const json = await response.json();
+        console.log(json);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+
+    const form = document.querySelector("#formBid");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      bidToSpecificListing(id);
+    });
   } catch (error) {
     console.log(error);
   }
 }
-
-specificPostWithId(API_BASE_URL_SPECIFIC + API_GET_LISTINGS);
-
-async function bidToSpecificListing(listID) {
-  try {
-    const token = localStorage.getItem("accessToken");
-    const getSpecificData = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${token}`,
-      },
-      body: JSON.stringify({
-        bid: bidInput.value,
-      }),
-    };
-    const url = `api/v1/auction/listings/${listID}/bids`;
-    const response = await fetch(API_BASE_URL_SPECIFIC + url, getSpecificData);
-    console.log(response);
-    const json = await response.json();
-    console.log(json);
-  }catch (error) {
-    console.log(error);
-  }
-}
-
-const form = document.querySelector('#formBid');
-
-console.log(form)
-
-form.addEventListener('submit', () => bidToSpecificListing(id));
 
 // TO THE LOGOUT
 
