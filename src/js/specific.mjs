@@ -12,7 +12,9 @@ console.log(id);
 
 const API_BASE_URL_SPECIFIC = "https://nf-api.onrender.com/";
 
-const API_GET_LISTINGS = "api/v1/auction/listings/" + id;
+const API_GET_LISTINGS = "api/v1/auction/listings/" + id + `?_bids=true`;
+
+// const API_VIEW_BIDS = "/api/v1/auction/listings/{id}/bids";
 
 specificPostWithId(API_BASE_URL_SPECIFIC + API_GET_LISTINGS);
 
@@ -41,9 +43,11 @@ async function specificPostWithId(API_ALL_LISTINGS) {
                     <div>
                       <img src="${json.media}" class=" w-100">
                     </div>
-<div class="col-sm-9 mt-4">
-                <p>${json.description}</p>
+                <h2>${json.title}</h2>
+                <h4>${json.created}</h4>
+                <h4>${json.id}</h4>
               </div>
+              <h4>${json.bids}</h4>
             <div>
             <form id="formBid">
             <input class="form-control" placeholder="Bid....." name="inputName" id="bidButton" required>
@@ -91,6 +95,31 @@ async function specificPostWithId(API_ALL_LISTINGS) {
     console.log(error);
   }
 }
+
+//async function bidToListing(id) {
+//try {
+//const token = localStorage.getItem("accessToken");
+//const getTheData = {
+// method: "POST",
+//headers: {
+// "Content-Type": "application/json",
+//Authorization: `Bearer ${token}`,
+//},
+//};
+//const url = `api/v1/auction/listings/${id}/bids`;
+//const response = await fetch(
+//API_BASE_URL_SPECIFIC + url,
+//getTheData,
+//);
+//console.log(response);
+//const json = await response.json();
+//console.log(json);
+//} catch (error) {
+// console.log(error);
+//}
+//}
+
+//bidToListing(id);
 
 // TO THE LOGOUT
 
