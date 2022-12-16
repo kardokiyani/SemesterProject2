@@ -32,7 +32,14 @@ async function specificPostWithId(API_ALL_LISTINGS) {
     console.log(response);
     const json = await response.json();
     console.log(json);
-
+    
+    function bidsTemplate(bids = []) {
+      return bids.map(bidTemplate).join("");
+    }
+    
+    function bidTemplate(bid) {
+      return `<div class="bid">${bid.amount}</div>`;
+    }
     postSpecific.innerHTML += `<section class="mt-5 container">
     <div class="row">
     <div class="postStyle">
@@ -47,7 +54,7 @@ async function specificPostWithId(API_ALL_LISTINGS) {
                 <h4>${json.created}</h4>
                 <h4>${json.id}</h4>
               </div>
-              <h4>${json.bids}</h4>
+              <div>${bidsTemplate(json.bids)}</>
             <div>
             <form id="formBid">
             <input class="form-control" placeholder="Bid....." name="inputName" id="bidButton" required>

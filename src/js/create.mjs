@@ -49,7 +49,7 @@ export async function createPost(title, deadlineDate, media, description) {
       body: JSON.stringify({
         title: title,
         endsAt: deadlineDate,
-        media: media,
+        media: [media],
         description: description,
       }),
     });
@@ -84,7 +84,7 @@ function validatePost(e) {
   return createPost(
     title.value,
     deadlineDate.value,
-    mediaError.value,
+    media.value,
     description.value
   );
 }

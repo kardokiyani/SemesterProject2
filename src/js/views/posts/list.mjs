@@ -28,7 +28,7 @@ function createList(items) {
           <img src="${item.media}" class="img-fluid"/>
           <div class="mt-1">
             <div><h2>${item.title}</h2></div>
-              <span class="text-dark"><i class="fa-solid fa-user fa-1x me-2 my-1"></i>${item.id}</span>
+              <span class="text-dark"><i class="fa-solid fa-user fa-1x me-2 my-1"></i>${item.tags}</span>
               <div class="d-flex align-items-center justify-content-between">
                 <p class=" mb-0"><span class="text-dark">Current: ${item._count.bids}</span></p>
                 <div class="px-4 text-danger">${item.endsAt}</div> 
