@@ -1,63 +1,70 @@
-# SemesterProject2
+# Your project title
 
-# USER STORIES:
+![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
 
-In the project, this website, the user can go to different pages from the navigation, and this is on all the pages. The user can also create a new list from the form on the homepage. If the user clicks on a list, then it takes the user to the specific page where the user can look at that specific list with it`s specific id etc. On the homepage, the user can also search for specific lists, for example if the user search "car", then only lists with the tag "car" will display on the page.
+A simple overview of the use/purpose of the project.
 
-On the profile page, the user can read some info about the user. The user can also update his/hers avatar from the update avatar form.
+## Description
 
-On the register page, the user can register a new user.
+Add a more detailed description of what your project entails and set out to do.
 
-On the login page the user can login to his/hers user.
+You can add some bullet points if you'd like to:
 
-On the about page the user can read a little bit about the company.
+- List item 1
+- List item 2
+- List item 3
 
-The user can also log out from the site, dosen`t matter from which page.
+## Built With
 
-On the specific page, under the list, the user can place a bid on the list.
+You can list a the tech stack that you've used over here
 
+- [React.js](https://reactjs.org/)
+- [Bootstrap](https://getbootstrap.com)
 
-# TECHNICAL RESTRICTIONS:
+## Getting Started
 
-On the site I have used an approved CSS Framework.
+### Installing
 
-The site is hosted on an approved Static Host.
+This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
 
-I have used an Design Application for planning the looks and functionality of the site.
+1. Clone the repo:
 
-I have used an Planning Application for planning and have control over what I have to do and what I have done throughout the project.
+```bash
+git clone git@github.com:NoroffFEU/portfolio-1-example.git
+```
 
+2. Install the dependencies:
 
-# REQUIRED LINKS:
+```
+npm install
+```
 
-A Gantt chart for project timing.
+### Running
 
-A design prototype.
+Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
 
-A style guide.
+To run the app, run the following commands:
 
-A kanban project board.
+```bash
+npm run start
+```
 
-A repository link.
+## Contributing
 
-A hosted application demo link.
+Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate `CONTRIBUTING.md` and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
 
+## Contact
 
-# CSS PROCESSORS:
+This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
 
-I have used Bootstrap.
+[My Twitter page](www.twitter.com)
 
+[My LinkedIn page](www.linkedin.com)
 
-# HOSTING SERVICES:
+## License
 
-I have used Netlify.
+You can link to your license file here if you're using one, or mention what license the codebase falls under. If you're unsure then you can simply delete this section.
 
+## Acknowledgments
 
-# DESIGN APPLICATIONS:
-
-I have used Adobe XD.
-
-
-# PLANNING APPLICATIONS:
-
-I have used Trello.
+This is where you can add any acknowledgements if you'd like, such as to people who have helped you or any code snippets you'd like to mention. You can delete this section if you don't have any acknowledgements to make.
