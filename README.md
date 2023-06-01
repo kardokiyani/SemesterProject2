@@ -6,7 +6,9 @@ This is a website where users can bid on different products, they can create lis
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do. On the site the user can log in, register and log out of the page, they can also look at listings which they can bid on. And they can also create their own listings on the website which other users can bid on as well.
+On the site the user can log in, register and log out of the page, they can also look at listings which they can bid on. And they can also create their listings on the website which other users can bid on as well.
+
+## Built With
 
 This is the tech stack that I have used to make this site:
 
