@@ -1,6 +1,6 @@
 # Kardo`s Auction Site
 
-![portfolio-auctionhouse-image](portfolio-auctionhouse-image.PNG)
+![portfolio-auctionhouse-image](https://github.com/kardokiyani/SemesterProject2/assets/91535515/02206340-4f5e-4dd7-9d71-55bff7744060)
 
 This is a website where users can bid on different products, they can create listings if they log in. They can update their avatar etc.
 
