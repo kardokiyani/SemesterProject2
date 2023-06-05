@@ -22,6 +22,16 @@ This is the tech stack that I have used to make this site:
 
 - [Adobe XD](https://www.adobe.com)
 
+### Running
+
+Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
+
+To run the app, run the following commands:
+
+```bash
+npm run start
+```
+
 ## Contact
 
 This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
