@@ -31,7 +31,7 @@ Here you can get info on how to start the project, basically how to clone the re
 1. Clone the repo:
 
 ```bash
-git clone git@github.com/SemesterProject2.git
+git clone git@github.com/kardokiyani/SemesterProject2.git
 ```
 
 2. Install the dependencies:
